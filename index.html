@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Portal Internal — Biro Mindset</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FAF8F2;
+    --paper-warm:#F3EFE3;
+    --ink:#20342F;
+    --ink-soft:#4B5F59;
+    --teal:#A64A79;
+    --teal-deep:#3C1B2E;
+    --teal-pale:#F3DEE9;
+    --coral:#C98A3A;
+    --coral-pale:#F7E6C9;
+    --line:rgba(60,27,46,0.12);
+    --radius:22px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; min-height:100vh; background:var(--paper); color:var(--ink);
+    font-family:'Plus Jakarta Sans', sans-serif; -webkit-font-smoothing:antialiased;
+    padding:28px 18px 48px; display:flex; flex-direction:column; align-items:center;
+  }
+  h1,h2{font-family:'Fraunces', serif; margin:0;}
+  .wrap{width:100%; max-width:520px;}
+  .top{text-align:center; margin-bottom:28px;}
+  .badge{
+    display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:700; color:var(--teal-deep);
+    background:var(--teal-pale); padding:6px 14px; border-radius:999px; margin-bottom:14px;
+  }
+  .top h1{font-size:clamp(26px,6vw,32px); color:var(--teal-deep);}
+  .top p{font-size:14.5px; color:var(--ink-soft); margin:10px 0 0; line-height:1.5;}
+  .cards{display:flex; flex-direction:column; gap:16px; margin-top:28px;}
+  .card{
+    display:flex; align-items:center; gap:16px; background:#fff; border:1.5px solid var(--line);
+    border-radius:var(--radius); padding:22px; text-decoration:none; color:inherit;
+    box-shadow:0 12px 28px -18px rgba(60,27,46,0.3); transition:transform .18s ease, box-shadow .18s ease;
+    min-height:88px;
+  }
+  .card:active{transform:scale(0.98);}
+  .card.disabled{opacity:0.55; pointer-events:none;}
+  .icon{
+    width:56px; height:56px; border-radius:16px; background:var(--teal-pale); flex-shrink:0;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .icon svg{width:28px; height:28px; color:var(--teal-deep);}
+  .card.coral .icon{background:var(--coral-pale);}
+  .card-body{flex:1; min-width:0;}
+  .card-body b{display:block; font-size:17px; font-family:'Fraunces', serif; color:var(--teal-deep);}
+  .card-body span{display:block; font-size:13px; color:var(--ink-soft); margin-top:3px;}
+  .card-body .soon{
+    display:inline-block; font-size:10.5px; font-weight:700; color:var(--coral); background:var(--coral-pale);
+    padding:2px 9px; border-radius:999px; margin-top:6px;
+  }
+  .arrow{flex-shrink:0; color:var(--ink-soft);}
+  .howto{
+    margin-top:36px; background:#fff; border:1px dashed var(--line); border-radius:18px; padding:20px 22px;
+  }
+  .howto h2{font-size:15.5px; color:var(--teal-deep); margin-bottom:10px;}
+  .howto ol{margin:0; padding-left:18px; font-size:13.5px; color:var(--ink-soft); line-height:1.7;}
+  .howto ol li{margin-bottom:2px;}
+  .foot{margin-top:28px; text-align:center; font-size:12px; color:var(--ink-soft);}
+  .foot a{color:var(--teal-deep); font-weight:700; text-decoration:none;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <span class="badge">🔒 Khusus Tim Internal</span>
+    <h1>Portal Internal Biro Mindset</h1>
+    <p>Halaman ini hanya untuk tim &amp; owner. Ketuk salah satu kartu di bawah untuk masuk ke sistem yang dituju.</p>
+  </div>
+
+  <div class="cards">
+    <a class="card" href="https://absensi.biromindset.com/" target="_blank" rel="noopener">
+      <div class="icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M8.5 14.5l2 2 4-4"/></svg>
+      </div>
+      <div class="card-body">
+        <b>Sistem Absensi</b>
+        <span>Kehadiran siswa harian &amp; rekap bulanan</span>
+      </div>
+      <svg class="arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
+
+    <a class="card coral" href="https://scoring.biromindset.com/" target="_blank" rel="noopener">
+      <div class="icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
+      </div>
+      <div class="card-body">
+        <b>Sistem Scoring</b>
+        <span>Skoring TKD &amp; NST otomatis</span>
+      </div>
+      <svg class="arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
+
+    <a class="card" href="https://psikotes.biromindset.com/login" target="_blank" rel="noopener">
+      <div class="icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><path d="M7 15l4-6 3 4 5-8"/></svg>
+      </div>
+      <div class="card-body">
+        <b>Login Admin Psikotes</b>
+        <span>Kelola data &amp; hasil asesmen (Admin/Guru)</span>
+      </div>
+      <svg class="arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+
+  <div class="howto">
+    <h2>💡 Agar tidak perlu buka browser tiap kali</h2>
+    <ol>
+      <li><b>Di HP Android (Chrome):</b> ketuk titik tiga (⋮) di pojok kanan atas → pilih "Tambahkan ke Layar Utama".</li>
+      <li><b>Di iPhone (Safari):</b> ketuk ikon Bagikan (kotak dengan panah ke atas) → pilih "Tambah ke Layar Utama".</li>
+      <li>Setelah itu, akan muncul ikon di layar HP seperti aplikasi biasa — tinggal ketuk untuk langsung membuka halaman ini.</li>
+    </ol>
+  </div>
+
+  <div class="foot">
+    Butuh bantuan akses? Hubungi tim teknis internal.
+  </div>
+</div>
+</body>
+</html>
