@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>LKS — Portal Internal Biro Mindset</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FAF8F2;
+    --paper-warm:#F3EFE3;
+    --ink:#20342F;
+    --ink-soft:#4B5F59;
+    --teal:#A64A79;
+    --teal-deep:#3C1B2E;
+    --teal-pale:#F3DEE9;
+    --coral:#C98A3A;
+    --coral-pale:#F7E6C9;
+    --line:rgba(60,27,46,0.12);
+    --radius:22px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; min-height:100vh; background:var(--paper); color:var(--ink);
+    font-family:'Plus Jakarta Sans', sans-serif; -webkit-font-smoothing:antialiased;
+    padding:20px 16px 40px; display:flex; flex-direction:column; align-items:center;
+  }
+  h1{font-family:'Fraunces', serif; margin:0;}
+  .wrap{width:100%; max-width:840px;}
+  .back{
+    display:inline-flex; align-items:center; gap:6px; font-size:13.5px; font-weight:700;
+    color:var(--ink-soft); text-decoration:none; margin-bottom:18px;
+  }
+  .back:hover{color:var(--teal-deep);}
+  .top{margin-bottom:20px;}
+  .badge{
+    display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:700; color:var(--teal-deep);
+    background:var(--teal-pale); padding:6px 14px; border-radius:999px; margin-bottom:12px;
+  }
+  .top h1{font-size:clamp(24px,6vw,30px); color:var(--teal-deep);}
+  .top p{font-size:14px; color:var(--ink-soft); margin:8px 0 0; line-height:1.5;}
+  .drive-frame-wrap{
+    background:#fff; border:1.5px solid var(--line); border-radius:var(--radius);
+    overflow:hidden; box-shadow:0 12px 28px -18px rgba(60,27,46,0.3);
+  }
+  .drive-frame-wrap iframe{width:100%; height:70vh; min-height:420px; border:0; display:block;}
+  .fallback{
+    margin-top:16px; display:flex; align-items:center; gap:10px; font-size:13px; color:var(--ink-soft);
+    background:#fff; border:1px dashed var(--line); border-radius:16px; padding:14px 18px; flex-wrap:wrap;
+  }
+  .fallback a{color:var(--teal-deep); font-weight:700; text-decoration:none;}
+  .fallback a:hover{text-decoration:underline;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="./">
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 6l-6 6 6 6"/></svg>
+    Kembali ke Portal Internal
+  </a>
+
+  <div class="top">
+    <span class="badge">🔒 Khusus Tim Internal</span>
+    <h1>LKS — Lembar Kerja Siswa</h1>
+    <p>Kumpulan berkas LKS tersimpan di Google Drive. Klik file untuk membuka atau mengunduh langsung dari panel di bawah.</p>
+  </div>
+
+  <div class="drive-frame-wrap">
+    <iframe src="https://drive.google.com/embeddedfolderview?id=1Magcucnb50iba-yi6MVitQ4dAoBoRHmz#grid" loading="lazy"></iframe>
+  </div>
+
+  <div class="fallback">
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0;"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+    Kalau panel di atas tidak muncul, buka langsung folder di
+    <a href="https://drive.google.com/drive/folders/1Magcucnb50iba-yi6MVitQ4dAoBoRHmz?usp=sharing" target="_blank" rel="noopener">Google Drive ↗</a>
+  </div>
+</div>
+</body>
+</html>
